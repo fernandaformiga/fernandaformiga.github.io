@@ -1,0 +1,446 @@
+html,
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+p {
+  margin: 0;
+}
+.topnav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 30rem;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: #e43f5a;
+}
+.topnav a.active {
+  color: #e43f5a;
+}
+.title {
+  flex: auto;
+  max-height: 30px;
+  text-align: left;
+  color: #e43f5a;
+}
+.profile {
+  background-color: #1b1b2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+}
+.me {
+  border-radius: 50%;
+  max-width: 25%;
+  margin-right: 10%;
+  margin-left: 20%;
+}
+.masterbio {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  margin-right: 20%;
+}
+.bio {
+  color: #e8e8ea;
+  text-align: justify;
+}
+.socneticons {
+  display: flex;
+  flex-direction: row;
+}
+.snicon {
+  width: 40px;
+  margin: 1rem;
+  fill: #e43f5a;
+}
+.snicon:hover {
+  fill: #e8e8ea;
+  transition: 0.3s;
+}
+h2 {
+  color: #e43f5a;
+  font-weight: 500;
+}
+h3 {
+  color: #e43f5a;
+  font-weight: 400;
+}
+.devdiv {
+  background-color: #0b0b13;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  padding-top: 8%;
+}
+html,
+.skills {
+  display: grid;
+  place-items: center;
+}
+.skill-bars {
+  padding: 25px 30px;
+  width: 100%;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #e43f5a;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.htmlcss span {
+  width: 80%;
+}
+.bar .progress-line.ruby span {
+  width: 50%;
+}
+.bar .progress-line.django span {
+  width: 80%;
+}
+.bar .progress-line.docker span {
+  width: 50%;
+}
+.bar .progress-line.python span {
+  width: 80%;
+}
+.bar .progress-line.sql span {
+  width: 50%;
+}
+.bar .progress-line.illustrator span {
+  width: 70%;
+}
+.bar .progress-line.photoshop span {
+  width: 35%;
+}
+.bar .progress-line.sketchup span {
+  width: 75%;
+}
+.bar .progress-line.autocad span {
+  width: 80%;
+}
+.bar .progress-line.revit span {
+  width: 70%;
+}
+.bar .progress-line.ingles span {
+  width: 95%;
+}
+.bar .progress-line.alemao span {
+  width: 45%;
+}
+.bar .progress-line.italiano span {
+  width: 35%;
+}
+.bar .progress-line.espanhol span {
+  width: 50%;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  color: #e8e8ea;
+}
+.dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 4rem;
+  color: #e8e8ea;
+  width: 35%;
+}
+.devicons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.subtitle-pink {
+  color: #e43f5a;
+}
+.subtitle-grey {
+  color: #8d8d97;
+}
+.detail-text {
+  font-size: 16px;
+  color: #8d8d97;
+  text-decoration: none;
+}
+.seemore {
+  color: #e43f5a;
+  text-decoration: none;
+  font-size: 24px;
+}
+.project-line {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon {
+  width: 50px;
+  margin: 1rem;
+  transition: 0.3s;
+}
+.proj {
+  width: 40px;
+}
+.icon:hover {
+  transform: translate(0, -10px);
+}
+.arqexperience {
+  justify-content: center;
+  width: 35%;
+  align-items: center;
+  color: #e8e8ea;
+}
+.projects {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  align-items: center;
+}
+.section5 {
+  background-color: #162447;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.moreinfo {
+  color: #e8e8ea;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.moreinfo2 {
+  color: #e8e8ea;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.section6 {
+  background-color: #0b0b13;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 1800px) {
+  .me {
+    max-width: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .masterbio {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .me {
+    max-width: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .text-info {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 850px) {
+    .profile {
+      background-color: #1b1b2f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .me {
+      max-width: 40%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .masterbio {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      margin-left: 15%;
+      margin-right: 15%;
+      height: 100%;
+    }
+    .snicon {
+      width: 30px;
+      margin: 1rem;
+      fill: #e43f5a;
+    }
+    .bio {
+      color: #e8e8ea;
+      padding-right: 0%;
+      text-align: justify;
+    }
+    .dev {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 10%;
+      color: #e8e8ea;
+      margin-top: 1rem;
+    }
+    .projects {
+      width: 80%;
+      color: #e8e8ea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .profile {
+      padding-top: 20%;
+    }
+    .masterbio {
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+    }
+    .me {
+      margin-top: 10%;
+      max-width: 50%;
+    }
+    .experience {
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+      margin: 10%;
+      color: #e8e8ea;
+    }
+    .arqexperience {
+      max-width: 80%;
+    }
+    .icon {
+      width: 40px;
+      margin: 0.5rem;
+    }
+    .projects {
+      width: 80%;
+    }
+    .devdiv {
+      background-color: #0b0b13;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .section5 {
+      flex-direction: column;
+    }
+    .moreinfo {
+      color: #e8e8ea;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+    .moreinfo2 {
+      max-width: 80%;
+    }
+    @media screen and (max-width: 500px) {
+      body {
+        font-size: 14px;
+      }
+      .text-info {
+        font-size: 14px;
+      }
+      .title {
+        margin-top: 5%;
+      }
+      .masterbio {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+      }
+      .me {
+        margin-top: 10%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .skill-bars .bar .info span {
+        font-weight: 300;
+        font-size: 12px;
+        opacity: 0;
+        animation: showText 0.5s 1s linear forwards;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .profile {
+        height: auto;
+      }
+    }
+  }
+}
