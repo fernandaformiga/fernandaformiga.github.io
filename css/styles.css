@@ -1,11 +1,11 @@
 body {
-    font-family: Montserrat;
+    font-family: 'Source Code Pro', monospace;
     margin: 0;
   }
 
   /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #1B1B2F;
     overflow: hidden;
   }
   
@@ -30,24 +30,100 @@ body {
     color: white;
   }
 
+
+  .section1 {
+    background-color: #1B1B2F;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top:3rem;
+  }
+
   .title {
+      font-size: 4rem;
       flex: auto;
       text-align: center;
+      padding-bottom: 1rem;
+      color: #E43F5A;
   }
+
+  .ml11 {
+    font-weight: 400;
+    font-size: 3.5em;
+  }
+
+
+  /*Changing Text - subtitle*/
+
+  .container {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #E43F5A;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #E43F5A;
+  margin-left: 0.1rem;
+  width: 20px;
+  animation: blink 0.5s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #E43F5A; }
+  49% { background-color: #E43F5A; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #E43F5A; }
+}
+
 
   * {
     box-sizing: border-box;
   }
   
+  .section2 {
+    background-color: #1B1B2F;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10rem;
+    height: auto;
+  }
+
+ .bio {
+    color: #E8E8EA;
+    padding-right: 10%;;
+  }
+
+  .me {
+    width:500px;
+    margin: 10%;
+  }
+
   /* Center website */
   .main {
     max-width: 1000px;
     margin: auto;
-  }
-  
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
   }
   
   .row {
