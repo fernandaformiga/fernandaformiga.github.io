@@ -33,12 +33,11 @@ body {
 
   .section1 {
     background-color: #1B1B2F;
-    height: 16rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 3rem;
     padding-top:3rem;
   }
 
@@ -95,18 +94,13 @@ body {
 }
 
 
-  * {
-    box-sizing: border-box;
-  }
   
   .section2 {
     background-color: #1B1B2F;
-    height: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 10rem;
     height: auto;
   }
 
@@ -120,51 +114,40 @@ body {
     margin: 10%;
   }
 
-  /* Center website */
-  .main {
-    max-width: 1000px;
-    margin: auto;
+.section3 {
+  background-color: #162447;
+}
+
+  .dev-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
-  /* Clear floats after rows */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+
+
+
+.section4 {
+  background-color: #E8E8EA;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width:100px;
+  margin: 2rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: right;
+  margin-top: 4rem;
+}
