@@ -1,11 +1,12 @@
 body {
     font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
     margin: 0;
   }
 
   /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #1B1B2F;
+    background-color: #0B0B13;
     overflow: hidden;
   }
   
@@ -106,48 +107,77 @@ body {
 
  .bio {
     color: #E8E8EA;
-    padding-right: 10%;;
+    padding-right: 10%;
+    max-width: 30%;
   }
 
   .me {
-    width:500px;
+    max-width: 30%;
     margin: 10%;
   }
 
-.section3 {
-  background-color: #162447;
+h2 {
+  color: #E43F5A;
 }
 
-  .dev-icons {
+.section3 {
+  background-color: #162447;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+}
+
+.devexperience {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 4rem;
+  color: #E8E8EA;
+  max-width: 30%;
+
+}
+
+  .devicons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
   }
 
 
 
 .section4 {
-  background-color: #E8E8EA;
+  background-color: #1F4068;
   display: flex;
   flex-direction: row;
   height: auto;
+  justify-content: space-around;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon {
-  width:100px;
+  width:75px;
   margin: 2rem;
 }
 
+.arqexperience {
+  max-width: 30%;
+}
+
 .projects {
-  display: flex;
-  justify-content: right;
   margin-top: 4rem;
+  justify-content: center;
+  max-width: 30%;
+  color: #E8E8EA;
 }
