@@ -1,8 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
     margin: 0;
   }
+
+  p { margin:0 }
 
   /* Add a black background color to the top navigation */
 .topnav {
@@ -28,7 +34,7 @@ body {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    color: white;
+    color: #E8E8EA;
   }
 
 
@@ -94,7 +100,6 @@ body {
   100%  { background-color: #E43F5A; }
 }
 
-
   
   .section2 {
     background-color: #1B1B2F;
@@ -105,12 +110,35 @@ body {
     height: auto;
   }
 
- .bio {
-    color: #E8E8EA;
-    padding-right: 10%;
+  .masterbio {
+    display: flex;
+    flex-direction: column;
     max-width: 30%;
   }
 
+ .bio {
+    color: #E8E8EA;
+    padding-right: 10%;
+  }
+
+  .socneticons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .snicon {
+    width:40px;
+    margin: 1rem;
+    fill: #E43F5A
+  }
+
+  .snicon:hover {
+    width:40px;
+    margin: 1rem;
+    fill: #E8E8EA;
+    transition: 0.3s;
+  }
+  
   .me {
     max-width: 30%;
     margin: 10%;
@@ -118,6 +146,10 @@ body {
 
 h2 {
   color: #E43F5A;
+}
+
+h3 {
+  margin:0%
 }
 
 .section3 {
@@ -153,6 +185,17 @@ h2 {
   }
 
 
+  .where {
+    color: #E43F5A;
+  }
+
+  .when {
+    color: #8D8D97;
+  }
+
+  .seemore {
+    color:  #1F4068;
+  }
 
 .section4 {
   background-color: #0B0B13;
