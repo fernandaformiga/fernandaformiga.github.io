@@ -110,6 +110,11 @@ body {
     height: auto;
   }
 
+  .me {
+    max-width: 30%;
+    margin: 10%;
+  }
+
   .masterbio {
     display: flex;
     flex-direction: column;
@@ -118,7 +123,6 @@ body {
 
  .bio {
     color: #E8E8EA;
-    padding-right: 10%;
   }
 
   .socneticons {
@@ -138,11 +142,7 @@ body {
     fill: #E8E8EA;
     transition: 0.3s;
   }
-  
-  .me {
-    max-width: 30%;
-    margin: 10%;
-  }
+
 
 h2 {
   color: #E43F5A;
@@ -225,4 +225,151 @@ h3 {
   margin-top: 4rem;
   justify-content: center;
   max-width: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .title {
+    margin-top: 15%;
+  }
+
+.container {
+  margin-bottom: 15%;
+}
+
+  .section2 {
+    background-color: #1B1B2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .me {
+    max-width: 60%;
+    margin: 5%;
+  }
+
+  .masterbio {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+  }
+
+ .bio {
+    color: #E8E8EA;
+    padding-right: 0%;
+    text-align: justify;
+  }
+
+  .socneticons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section3 {
+    background-color: #0B0B13;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+  }
+  
+  .devexperience {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 10%;
+    color: #E8E8EA
+  }
+  
+  .dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-top: 4rem;
+    color: #E8E8EA;
+    max-width: 60%;
+    margin: 10%;
+  
+  }
+  
+    .devicons {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      align-items: center;
+    }
+
+    .section4 {
+      background-color: #0B0B13;
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .icons {
+      display: flex;
+      flex-direction: row;
+      max-width: 60%;
+    }
+    
+    .icon {
+      width:75px;
+      margin: 1rem;
+    }
+    
+    .arqexperience {
+      max-width: 60%;
+      color: #E8E8EA
+    }
+    
+    .projects {
+      margin-top: 4rem;
+      justify-content: center;
+      max-width: 60%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .title {
+    margin-top: 30%;
+  }
+
+.container {
+  margin-bottom: 30%;
+}
+
+
+  .section2 {
+    background-color: #1B1B2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section3 {
+    background-color: #0B0B13;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .section4 {
+    background-color: #0B0B13;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+  }
 }
