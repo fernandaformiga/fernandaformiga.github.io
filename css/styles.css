@@ -160,6 +160,88 @@ h3 {
   justify-content: space-around;
 }
 
+    /* skills  */ 
+  
+  html, .skills{
+    display: grid;
+    height: 100%;
+    place-items: center;
+  }
+  .skill-bars{
+    padding: 25px 30px;
+    width: 100%;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #E43F5A;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 80%;
+  }
+  .bar .progress-line.css span{
+    width: 80%;
+  }
+  .bar .progress-line.nodejs span{
+    width: 30%;
+  }
+  .bar .progress-line.react span{
+    width: 30%;
+  }
+  .bar .progress-line.python span{
+    width: 70%;
+  }
+  .bar .progress-line.sql span{
+    width: 15%;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  
+
+       /* skills  */ 
+
 .devexperience {
   display: flex;
   flex-direction: column;
@@ -302,6 +384,7 @@ h3 {
       align-items: center;
     }
 
+
     .section4 {
       background-color: #0B0B13;
       display: flex;
@@ -318,8 +401,8 @@ h3 {
     }
     
     .icon {
-      width:75px;
-      margin: 1rem;
+      width:50px;
+      margin: 5%;
     }
     
     .arqexperience {
@@ -332,8 +415,6 @@ h3 {
       justify-content: center;
       max-width: 60%;
     }
-
-}
 
 
 
@@ -372,4 +453,5 @@ h3 {
     height: auto;
     justify-content: space-around;
   }
+}
 }
