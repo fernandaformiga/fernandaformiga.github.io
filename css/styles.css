@@ -62,6 +62,8 @@ body {
   }
 
 
+
+  
   /*Changing Text - subtitle*/
 
   .container {
@@ -390,14 +392,14 @@ h3 {
   }
 
   .me {
-    max-width: 60%;
+    max-width: 80%;
     margin: 5%;
   }
 
   .masterbio {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    max-width: 80%;
   }
 
  .bio {
@@ -421,7 +423,7 @@ h3 {
   .devexperience {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    max-width: 80%;
     margin: 10%;
     color: #E8E8EA
   }
@@ -429,7 +431,7 @@ h3 {
   .dev {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     margin: 10%;
     color: #E8E8EA;
     margin-top: 1rem;
@@ -445,12 +447,12 @@ h3 {
     }
     
     .arqexperience {
-      width: 60%;
+      width: 80%;
       color: #E8E8EA
     }
 
     .projects {
-      width: 60%;
+      width: 80%;
       color: #E8E8EA;
       display: flex;
       align-items: center;
@@ -472,14 +474,11 @@ h3 {
       color: #E8E8EA;
       display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 80%;
     }
     
     .moreinfo2 {
-      color: #E8E8EA;
-      display: flex;
-      flex-direction: column;
-      width: 60%;
+      max-width: 80%;
     }
     
 
