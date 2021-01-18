@@ -112,7 +112,9 @@ body {
 
   .me {
     max-width: 30%;
-    margin: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
 
   .masterbio {
@@ -266,15 +268,15 @@ h3 {
   justify-content: right;
   margin-top: 4rem;
   color: #E8E8EA;
-  max-width: 30%;
+  width: 30%;
 
 }
 
   .devicons {
     display: flex;
     flex-direction: row;
-    justify-content: right;
     align-items: center;
+    justify-content: center;
   }
 
 
@@ -301,7 +303,6 @@ h3 {
 .icons {
   display: flex;
   flex-direction: row;
-  max-width: 30%;
   align-items: center;
 }
 
@@ -311,14 +312,17 @@ h3 {
 }
 
 .arqexperience {
-  max-width: 30%;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
   color: #E8E8EA
 }
 
 .projects {
   margin-top: 4rem;
   justify-content: center;
-  max-width: 30%;
+  width: 30%;
+  align-items: center;
 }
 
 .section5 {
@@ -334,7 +338,7 @@ h3 {
   color: #E8E8EA;
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  width: 30%;
 }
 
 .moreinfo2 {
@@ -345,6 +349,26 @@ h3 {
 }
 
 
+@media screen and (max-width: 1500px) {
+  .me {
+    max-width: 40%;
+    margin: 5%;
+    margin-top:10%;
+  }
+
+  .masterbio {
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+  }
+
+ .bio {
+    color: #E8E8EA;
+    padding-right: 0%;
+    text-align: justify;
+  }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -405,9 +429,10 @@ h3 {
   .dev {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    width: 60%;
     margin: 10%;
-    color: #E8E8EA
+    color: #E8E8EA;
+    margin-top: 1rem;
   }
   
     .section4 {
@@ -420,12 +445,12 @@ h3 {
     }
     
     .arqexperience {
-      max-width: 60%;
+      width: 60%;
       color: #E8E8EA
     }
 
     .projects {
-      max-width: 60%;
+      width: 60%;
       color: #E8E8EA;
       display: flex;
       align-items: center;
@@ -447,14 +472,14 @@ h3 {
       color: #E8E8EA;
       display: flex;
       flex-direction: column;
-      max-width: 60%;
+      width: 60%;
     }
     
     .moreinfo2 {
       color: #E8E8EA;
       display: flex;
       flex-direction: column;
-      max-width: 60%;
+      width: 60%;
     }
     
 
@@ -469,7 +494,9 @@ h3 {
   margin-bottom: 30%;
 }
 
-
+.me {
+  margin-top: 10%;
+}
   .section2 {
     background-color: #1B1B2F;
     display: flex;
