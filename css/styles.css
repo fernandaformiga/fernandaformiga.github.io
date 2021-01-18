@@ -164,7 +164,6 @@ h3 {
   
   html, .skills{
     display: grid;
-    height: 100%;
     place-items: center;
   }
   .skill-bars{
@@ -232,6 +231,18 @@ h3 {
   }
   .bar .progress-line.sql span{
     width: 15%;
+  }
+  .bar .progress-line.ingles span{
+    width: 95%;
+  }
+  .bar .progress-line.alemao span{
+    width: 45%;
+  }
+  .bar .progress-line.italiano span{
+    width: 30%;
+  }
+  .bar .progress-line.espanhol span{
+    width: 50%;
   }
   @keyframes showText2 {
     100%{
@@ -309,6 +320,31 @@ h3 {
   max-width: 30%;
 }
 
+.section5 {
+  background-color: #162447;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.moreinfo {
+  color: #E8E8EA;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.moreinfo2 {
+  color: #E8E8EA;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+
+
 @media screen and (max-width: 1200px) {
 
   .title {
@@ -357,7 +393,6 @@ h3 {
     height: auto;
     align-items: center;
   }
-  
   .devexperience {
     display: flex;
     flex-direction: column;
@@ -369,21 +404,27 @@ h3 {
   .dev {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    margin-top: 4rem;
-    color: #E8E8EA;
-    max-width: 60%;
-    margin: 10%;
-  
+    margin-top: 0px;
+    max-width: 100%;
+    color: #E8E8EA
+  }
+
+
+.devicons {
+  display: flex;
+  align-items: center;
+}
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   
-    .devicons {
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      align-items: center;
-    }
-
+  .icon {
+    margin: 5%;
+  }
+  
 
     .section4 {
       background-color: #0B0B13;
@@ -392,17 +433,6 @@ h3 {
       height: auto;
       justify-content: space-around;
       align-items: center;
-    }
-    
-    .icons {
-      display: flex;
-      flex-direction: row;
-      max-width: 60%;
-    }
-    
-    .icon {
-      width:50px;
-      margin: 5%;
     }
     
     .arqexperience {
@@ -416,6 +446,29 @@ h3 {
       max-width: 60%;
     }
 
+    .section5 {
+      background-color: #162447;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .moreinfo {
+      color: #E8E8EA;
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+    }
+    
+    .moreinfo2 {
+      color: #E8E8EA;
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+    }
+    
 
 
 @media screen and (max-width: 1000px) {
