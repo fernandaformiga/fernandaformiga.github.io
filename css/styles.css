@@ -387,6 +387,14 @@ h2 {
 @media screen and (max-width: 1200px) {
 
 
+  .title {
+    margin-top: 5%;
+    font-size: 2rem;
+  }
+  .container {
+    margin-bottom: 5%;
+  }
+
   .section2 {
     background-color: #1B1B2F;
     display: flex;
@@ -412,25 +420,6 @@ h2 {
     text-align: justify;
   }
 
-  .socneticons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .section3 {
-    background-color: #0B0B13;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-  }
-  .devexperience {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin: 10%;
-    color: #E8E8EA
-  }
 
   .dev {
     display: flex;
@@ -450,10 +439,6 @@ h2 {
       align-items: center;
     }
     
-    .arqexperience {
-      width: 80%;
-      color: #E8E8EA
-    }
 
     .projects {
       width: 80%;
@@ -465,14 +450,64 @@ h2 {
     }
   
 
-    .section5 {
-      background-color: #162447;
+    .masterbio {
       display: flex;
       flex-direction: column;
-      height: auto;
-      justify-content: space-around;
-      align-items: center;
+      max-width: 80%;
     }
+    .me {
+      margin-top: 10%;
+      max-width: 60%;
+    }
+      .section2 {
+        background-color: #1B1B2F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .devexperience {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 10%;
+        color: #E8E8EA
+      }
+    
+      .arqexperience {
+        max-width: 80%;
+      }
+    
+      .icon {
+        width: 3rem;
+        margin:0.5rem
+      }
+    
+      .projects {
+        width: 80%;
+      }
+    
+      .section3 {
+        background-color: #0B0B13;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+      }
+    
+      .section4 {
+        background-color: #0B0B13;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+      }
+
+      .section5 {
+        flex-direction: column;
+      }
 
     .moreinfo {
       color: #E8E8EA;
@@ -486,90 +521,6 @@ h2 {
     }
     
 
-
-@media screen and (max-width: 1000px) {
-
-  body {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .title {
-    margin-top: 5%;
-    font-size: 2rem;
-  }
-
-.container {
-  margin-bottom: 5%;
-}
-
-
-.masterbio {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-}
-.me {
-  margin-top: 10%;
-  max-width: 60%;
-}
-  .section2 {
-    background-color: #1B1B2F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .devexperience {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin: 10%;
-    color: #E8E8EA
-  }
-
-  .arqexperience {
-    max-width: 80%;
-  }
-
-  .icon {
-    width: 3rem;
-    margin:0.5rem
-  }
-
-  .projects {
-    width: 80%;
-  }
-
-  .section3 {
-    background-color: #0B0B13;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: space-around;
-  }
-
-  .section4 {
-    background-color: #0B0B13;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: space-around;
-  }
-
-  .skill-bars .bar .info span{
-    font-weight: 300;
-    font-size: 16px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-  }
-}
-}
 
 @media screen and (max-width: 500px) {
 
