@@ -356,7 +356,7 @@ h2 {
 }
 
 .section6 {
-  background-color: #162447;
+  background-color: #0B0B13;
   display: flex;
   flex-direction: row;
   height: auto;
@@ -493,6 +493,10 @@ h2 {
     font-size: 16px;
   }
 
+  p {
+    font-size: 16px;
+  }
+
   .title {
     margin-top: 5%;
     font-size: 2rem;
@@ -506,11 +510,11 @@ h2 {
 .masterbio {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%;
 }
 .me {
   margin-top: 10%;
-  max-width: 70%;
+  max-width: 60%;
 }
   .section2 {
     background-color: #1B1B2F;
@@ -521,9 +525,25 @@ h2 {
     height: auto;
   }
 
+  .devexperience {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 10%;
+    color: #E8E8EA
+  }
+
+  .arqexperience {
+    max-width: 80%;
+  }
+
   .icon {
     width: 3rem;
     margin:0.5rem
+  }
+
+  .projects {
+    width: 80%;
   }
 
   .section3 {
@@ -570,11 +590,11 @@ h2 {
 .masterbio {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%;
 }
 .me {
   margin-top: 10%;
-  max-width: 70%;
+  width: 80%;
 }
   .section2 {
     background-color: #1B1B2F;
