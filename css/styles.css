@@ -106,7 +106,7 @@ body {
 
   .me {
     max-width: 25%;
-    margin-right: 15%;
+    margin-right: 25%;
 
   }
 
@@ -352,7 +352,7 @@ h2 {
   color: #E8E8EA;
   display: flex;
   flex-direction: column;
-  max-width: 35%;
+  width: 35%;
 }
 
 .section6 {
@@ -583,4 +583,5 @@ h2 {
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
   }
+}
 }
