@@ -107,8 +107,7 @@ body {
   .me {
     max-width: 25%;
     margin-right: 15%;
-    margin-left:10%;
-    margin-bottom: 5%;
+
   }
 
   .masterbio {
@@ -144,9 +143,6 @@ h2 {
   color: #E43F5A;
 }
 
-h3 {
-  margin:0%
-}
 
 .section3 {
   background-color: #0B0B13;
@@ -378,7 +374,7 @@ h3 {
   .masterbio {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 35%;
   }
 
  .bio {
@@ -397,17 +393,17 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
   }
 
   .me {
-    max-width: 70%;
+    max-width: 50%;
+    margin: 0%
   }
 
   .masterbio {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 50%;
   }
 
  .bio {
@@ -493,16 +489,28 @@ h3 {
 
 @media screen and (max-width: 1000px) {
 
+  body {
+    font-size: 16px;
+  }
+
   .title {
-    margin-top: 35%;
+    margin-top: 5%;
+    font-size: 2rem;
   }
 
 .container {
-  margin-bottom: 35%;
+  margin-bottom: 5%;
 }
 
+
+.masterbio {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
 .me {
   margin-top: 10%;
+  max-width: 70%;
 }
   .section2 {
     background-color: #1B1B2F;
@@ -533,5 +541,75 @@ h3 {
     height: auto;
     justify-content: space-around;
   }
+
+  .skill-bars .bar .info span{
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
 }
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .title {
+    margin-top: 5%;
+    font-size: 2rem;
+  }
+
+.container {
+  margin-bottom: 5%;
+}
+
+
+.masterbio {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+.me {
+  margin-top: 10%;
+  max-width: 70%;
+}
+  .section2 {
+    background-color: #1B1B2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .icon {
+    width: 3rem;
+    margin:0.5rem
+  }
+
+  .section3 {
+    background-color: #0B0B13;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .section4 {
+    background-color: #0B0B13;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .skill-bars .bar .info span{
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
 }
