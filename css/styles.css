@@ -40,28 +40,20 @@ body {
 
   .section1 {
     background-color: #1B1B2F;
-    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top:3rem;
+    flex-direction: row;
+    height: auto;
   }
 
   .title {
-      font-size: 4rem;
+      font-size: 3rem;
       flex: auto;
-      text-align: center;
+      text-align: left;
       padding-bottom: 1rem;
       color: #E43F5A;
   }
-
-  .ml11 {
-    font-weight: 400;
-    font-size: 3.5em;
-  }
-
-
 
   
   /*Changing Text - subtitle*/
@@ -69,11 +61,11 @@ body {
   .container {
   height: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .container p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -113,16 +105,16 @@ body {
   }
 
   .me {
-    max-width: 30%;
-    margin-right: 10%;
+    max-width: 25%;
+    margin-right: 15%;
+    margin-left:10%;
     margin-bottom: 5%;
-    margin-top: 5%;
   }
 
   .masterbio {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 35%;
   }
 
  .bio {
@@ -225,16 +217,31 @@ h3 {
     width: 80%;
   }
   .bar .progress-line.nodejs span{
-    width: 30%;
+    width: 35%;
   }
   .bar .progress-line.react span{
-    width: 30%;
+    width: 35%;
   }
   .bar .progress-line.python span{
     width: 70%;
   }
   .bar .progress-line.sql span{
     width: 15%;
+  }
+  .bar .progress-line.illustrator span{
+    width: 70%;
+  }
+  .bar .progress-line.photoshop span{
+    width: 35%;
+  }
+  .bar .progress-line.sketchup span{
+    width: 75%;
+  }
+  .bar .progress-line.autocad span{
+    width: 80%;
+  }
+  .bar .progress-line.revit span{
+    width: 70%;
   }
   .bar .progress-line.ingles span{
     width: 95%;
@@ -243,7 +250,7 @@ h3 {
     width: 45%;
   }
   .bar .progress-line.italiano span{
-    width: 30%;
+    width: 35%;
   }
   .bar .progress-line.espanhol span{
     width: 50%;
@@ -260,7 +267,7 @@ h3 {
 .devexperience {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 35%;
   color: #E8E8EA
 }
 
@@ -270,7 +277,7 @@ h3 {
   justify-content: right;
   margin-top: 4rem;
   color: #E8E8EA;
-  width: 30%;
+  width: 35%;
 
 }
 
@@ -315,15 +322,17 @@ h3 {
 
 .arqexperience {
   justify-content: center;
-  width: 30%;
+  width: 35%;
   align-items: center;
   color: #E8E8EA
 }
 
 .projects {
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 35%;
   align-items: center;
 }
 
@@ -340,26 +349,33 @@ h3 {
   color: #E8E8EA;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
 }
 
 .moreinfo2 {
   color: #E8E8EA;
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 35%;
 }
 
+.section6 {
+  background-color: #162447;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media screen and (max-width: 1500px) {
   .me {
-    max-width: 40%;
-    margin: 5%;
-    margin-top:10%;
+    max-width: 25%;
+    margin-right: 15%;
+    margin-left:10%;
   }
 
   .masterbio {
-    margin-top:10%;
     display: flex;
     flex-direction: column;
     max-width: 40%;
@@ -374,13 +390,6 @@ h3 {
 
 @media screen and (max-width: 1200px) {
 
-  .title {
-    margin-top: 15%;
-  }
-
-.container {
-  margin-bottom: 15%;
-}
 
   .section2 {
     background-color: #1B1B2F;
@@ -392,8 +401,7 @@ h3 {
   }
 
   .me {
-    max-width: 80%;
-    margin: 5%;
+    max-width: 70%;
   }
 
   .masterbio {
@@ -486,11 +494,11 @@ h3 {
 @media screen and (max-width: 1000px) {
 
   .title {
-    margin-top: 30%;
+    margin-top: 35%;
   }
 
 .container {
-  margin-bottom: 30%;
+  margin-bottom: 35%;
 }
 
 .me {
