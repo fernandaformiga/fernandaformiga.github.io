@@ -215,8 +215,11 @@ h2 {
   .bar .progress-line.nodejs span{
     width: 35%;
   }
+  .bar .progress-line.django span{
+    width: 40%;
+  }
   .bar .progress-line.react span{
-    width: 35%;
+    width: 30%;
   }
   .bar .progress-line.python span{
     width: 70%;
