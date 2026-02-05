@@ -11,6 +11,16 @@ p {
   margin: 0;
 }
 
+h2 {
+  color: #ff4242;
+  font-weight: 500;
+}
+
+h3 {
+  color: #ff4242;
+  font-weight: 400;
+}
+
 .topnav {
   background-color: #fedd8d;
   position: fixed;
@@ -46,10 +56,9 @@ p {
 .profile {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
   height: 100vh;
 }
 
@@ -88,16 +97,6 @@ p {
   transition: 0.3s;
 }
 
-h2 {
-  color: #ff4242;
-  font-weight: 500;
-}
-
-h3 {
-  color: #ff4242;
-  font-weight: 400;
-}
-
 .devdiv {
   background-color: #fff;
   display: flex;
@@ -105,135 +104,6 @@ h3 {
   justify-content: space-around;
   height: auto;
   padding-top: 8%;
-}
-
-html,
-.skills {
-  display: grid;
-  place-items: center;
-}
-
-.skill-bars {
-  padding: 25px 30px;
-  width: 100%;
-}
-
-.skill-bars .bar {
-  margin: 20px 0;
-}
-
-.skill-bars .bar:first-child {
-  margin-top: 0px;
-}
-
-.skill-bars .bar .info {
-  margin-bottom: 5px;
-}
-
-.skill-bars .bar .info span {
-  font-weight: 500;
-  font-size: 17px;
-  opacity: 0;
-  animation: showText 0.5s 1s linear forwards;
-}
-
-@keyframes showText {
-  100% {
-    opacity: 1;
-  }
-}
-
-.skill-bars .bar .progress-line {
-  height: 10px;
-  width: 100%;
-  background: #e6e6e6;
-  position: relative;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 10px;
-  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.bar .progress-line span {
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: #ff4242;
-  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-.bar .progress-line.htmlcss span {
-  width: 80%;
-}
-
-.bar .progress-line.ruby span {
-  width: 50%;
-}
-
-.bar .progress-line.django span {
-  width: 80%;
-}
-
-.bar .progress-line.docker span {
-  width: 50%;
-}
-
-.bar .progress-line.python span {
-  width: 80%;
-}
-
-.bar .progress-line.sql span {
-  width: 50%;
-}
-
-.bar .progress-line.illustrator span {
-  width: 70%;
-}
-
-.bar .progress-line.photoshop span {
-  width: 35%;
-}
-
-.bar .progress-line.sketchup span {
-  width: 75%;
-}
-
-.bar .progress-line.autocad span {
-  width: 80%;
-}
-
-.bar .progress-line.revit span {
-  width: 70%;
-}
-
-.bar .progress-line.ingles span {
-  width: 95%;
-}
-
-.bar .progress-line.alemao span {
-  width: 45%;
-}
-
-.bar .progress-line.italiano span {
-  width: 35%;
-}
-
-.bar .progress-line.espanhol span {
-  width: 50%;
-}
-
-@keyframes showText2 {
-  100% {
-    opacity: 1;
-  }
 }
 
 .experience {
@@ -330,13 +200,7 @@ html,
   align-items: center;
 }
 
-.moreinfo {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-}
-
+.moreinfo,
 .moreinfo2 {
   color: #fff;
   display: flex;
@@ -351,6 +215,135 @@ html,
   height: auto;
   justify-content: space-around;
   align-items: center;
+}
+
+html,
+.skills {
+  display: grid;
+  place-items: center;
+}
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 100%;
+}
+
+.skill-bars .bar {
+  margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #e6e6e6;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #ff4242;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.htmlcss span {
+  width: 80%;
+}
+
+.bar .progress-line.ruby span {
+  width: 50%;
+}
+
+.bar .progress-line.django span {
+  width: 80%;
+}
+
+.bar .progress-line.docker span {
+  width: 50%;
+}
+
+.bar .progress-line.python span {
+  width: 80%;
+}
+
+.bar .progress-line.sql span {
+  width: 50%;
+}
+
+.bar .progress-line.illustrator span {
+  width: 70%;
+}
+
+.bar .progress-line.photoshop span {
+  width: 35%;
+}
+
+.bar .progress-line.sketchup span {
+  width: 75%;
+}
+
+.bar .progress-line.autocad span {
+  width: 80%;
+}
+
+.bar .progress-line.revit span {
+  width: 70%;
+}
+
+.bar .progress-line.ingles span {
+  width: 95%;
+}
+
+.bar .progress-line.alemao span {
+  width: 45%;
+}
+
+.bar .progress-line.italiano span {
+  width: 35%;
+}
+
+.bar .progress-line.espanhol span {
+  width: 50%;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1800px) {
@@ -380,157 +373,140 @@ html,
   .text-info {
     font-size: 16px;
   }
+}
 
-  @media screen and (max-width: 850px) {
-    .profile {
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+@media screen and (max-width: 850px) {
+  .profile {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20%;
+  }
 
-    .me {
-      max-width: 40%;
-      margin-left: 20%;
-      margin-right: 20%;
-    }
+  .me {
+    max-width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
 
-    .masterbio {
-      display: flex;
-      flex-direction: column;
-      max-width: 50%;
-      margin-left: 15%;
-      margin-right: 15%;
-      height: 100%;
-    }
+  .masterbio {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+  }
 
-    .snicon {
-      width: 30px;
-      margin: 1rem;
-      fill: #ff4242;
-    }
+  .snicon {
+    width: 30px;
+    margin: 1rem;
+    fill: #ff4242;
+  }
 
-    .bio {
-      color: #1d1e2c;
-      padding-right: 0%;
-      text-align: justify;
-    }
+  .bio {
+    color: #1d1e2c;
+    padding-right: 0%;
+    text-align: justify;
+  }
 
-    .dev {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin: 10%;
-      color: #1d1e2c;
-      margin-top: 1rem;
-    }
+  .dev {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10%;
+    color: #1d1e2c;
+    margin-top: 1rem;
+  }
 
-    .projects {
-      width: 80%;
-      color: #1d1e2c;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .projects {
+    width: 80%;
+    color: #1d1e2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .profile {
-      padding-top: 20%;
-    }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 10%;
+    color: #1d1e2c;
+  }
 
-    .masterbio {
-      display: flex;
-      flex-direction: column;
-      max-width: 80%;
-    }
+  .arqexperience {
+    max-width: 80%;
+  }
 
-    .me {
-      margin-top: 10%;
-      max-width: 50%;
-    }
+  .icon {
+    width: 40px;
+    margin: 0.5rem;
+  }
 
-    .experience {
-      display: flex;
-      flex-direction: column;
-      max-width: 80%;
-      margin: 10%;
-      color: #1d1e2c;
-    }
+  .devdiv {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-    .arqexperience {
-      max-width: 80%;
-    }
+  .section5 {
+    flex-direction: column;
+  }
 
-    .icon {
-      width: 40px;
-      margin: 0.5rem;
-    }
+  .moreinfo {
+    color: #1d1e2c;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
 
-    .projects {
-      width: 80%;
-    }
+  .moreinfo2 {
+    max-width: 80%;
+  }
+}
 
-    .devdiv {
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
 
-    .section5 {
-      flex-direction: column;
-    }
+  .text-info {
+    font-size: 14px;
+  }
 
-    .moreinfo {
-      color: #1d1e2c;
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-    }
+  .title {
+    margin-top: 5%;
+  }
 
-    .moreinfo2 {
-      max-width: 80%;
-    }
+  .masterbio {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
 
-    @media screen and (max-width: 500px) {
-      body {
-        font-size: 14px;
-      }
+  .me {
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
-      .text-info {
-        font-size: 14px;
-      }
+  .skill-bars .bar .info span {
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+}
 
-      .title {
-        margin-top: 5%;
-      }
-
-      .masterbio {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-      }
-
-      .me {
-        margin-top: 10%;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
-
-      .skill-bars .bar .info span {
-        font-weight: 300;
-        font-size: 12px;
-        opacity: 0;
-        animation: showText 0.5s 1s linear forwards;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .profile {
-        height: auto;
-      }
-    }
+@media screen and (max-width: 400px) {
+  .profile {
+    height: auto;
   }
 }
